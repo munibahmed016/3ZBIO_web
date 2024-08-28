@@ -1,16 +1,16 @@
 import React from 'react';
 import {
-  FaFacebookF, FaInstagram, FaYoutube, FaCcVisa, FaCcMastercard, FaCcPaypal
+  FaFacebookF, FaInstagram, FaYoutube, FaCcVisa, FaCcMastercard, FaCcPaypal, FaCcAmex, FaCcDiscover
 } from 'react-icons/fa';
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-8">
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 text-center">
         {/* Help Section */}
         <div>
           <h4 className="font-bold text-lg mb-4">HERE TO HELP</h4>
-          <ul className="space-y-2">
+          <ul className="space-y-3">
             <li><a href="/order-status" className="hover:text-teal-400">Order Status</a></li>
             <li><a href="/shipping" className="hover:text-teal-400">Shipping & Delivery</a></li>
             <li><a href="/returns" className="hover:text-teal-400">Return Policy</a></li>
@@ -20,7 +20,7 @@ const Footer = () => {
         {/* Store Policies Section */}
         <div>
           <h4 className="font-bold text-lg mb-4">STORE POLICIES</h4>
-          <ul className="space-y-2">
+          <ul className="space-y-3">
             <li><a href="/delivery-information" className="hover:text-teal-400">Delivery Information</a></li>
             <li><a href="/refunds-returns" className="hover:text-teal-400">Refunds & Returns</a></li>
             <li><a href="/careers" className="hover:text-teal-400">Careers</a></li>
@@ -31,48 +31,54 @@ const Footer = () => {
         <div>
           <h4 className="font-bold text-lg mb-4">NEWSLETTER</h4>
           <p>Sign up and get 15% off your first order</p>
-          <form className="flex flex-col mt-4 space-y-2">
+          <form className="flex flex-col mt-4 space-y-2 items-center">
             <input
               type="email"
-              className="bg-gray-800 text-white p-2  focus:outline-none"
-              placeholder="Enter your mail..."
+              className="bg-gray-800 text-white p-2 w-80 focus:outline-none text-center"
+              placeholder="Enter your email..."
             />
-            <button type="submit" className="bg-teal-600 text-white py-2 hover:bg-teal-500">
+            <button type="submit" className="bg-teal-600 text-white py-1 w-40 px-4 text-sm hover:bg-teal-500">
               SUBSCRIBE
             </button>
           </form>
           {/* Social Media Icons */}
-          <div className="flex space-x-4 mt-4">
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400">
-              <FaFacebookF />
+          <div className="flex justify-center space-x-4 mt-4">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">
+              <FaFacebookF className="text-2xl text-white hover:text-blue-500 transition-colors duration-200" />
             </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400">
-              <FaInstagram />
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-600">
+              <FaInstagram className="text-2xl text-white hover:text-purple-500 transition-colors duration-200" />
             </a>
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400">
-              <FaYoutube />
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" className="hover:text-red-600">
+              <FaYoutube className="text-2xl text-white hover:text-red-500 transition-colors duration-200" />
             </a>
           </div>
         </div>
       </div>
-      
-      {/* Payment Methods Section */}
-      <div className="container mx-auto mt-8 px-4">
-        <div className="border-t border-gray-800 pt-4 flex justify-center space-x-4">
+
+      {/* Payment Methods and Copyright Section */}
+      <div className="container mx-auto mt-8 px-4 flex flex-col md:flex-row justify-between items-center border-t border-gray-800 pt-4">
+        {/* Copyright Section */}
+        <p className="text-center text-sm mb-4 md:mb-0">&copy; 2024 3Z Bio All Rights Reserved.</p>
+
+        {/* Payment Methods Section */}
+        <div className="flex justify-center space-x-4">
           <a href="https://www.visa.com" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400">
-            <FaCcVisa className="text-4xl" />
+            <FaCcVisa className="text-3xl bg-gray-700 text-white p-2 hover:bg-blue-600 rounded-lg transition-all duration-200" />
           </a>
           <a href="https://www.mastercard.com" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400">
-            <FaCcMastercard className="text-4xl" />
+            <FaCcMastercard className="text-3xl bg-gray-700 text-white p-2 hover:bg-red-600 rounded-lg transition-all duration-200" />
           </a>
           <a href="https://www.paypal.com" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400">
-            <FaCcPaypal className="text-4xl" />
+            <FaCcPaypal className="text-3xl bg-gray-700 text-white p-2 hover:bg-blue-400 rounded-lg transition-all duration-200" />
+          </a>
+          <a href="https://www.americanexpress.com" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400">
+            <FaCcAmex className="text-3xl bg-gray-700 text-white p-2 hover:bg-blue-800 rounded-lg transition-all duration-200" />
+          </a>
+          <a href="https://www.discover.com" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400">
+            <FaCcDiscover className="text-3xl bg-gray-700 text-white p-2 hover:bg-orange-600 rounded-lg transition-all duration-200" />
           </a>
         </div>
-      </div>
-
-      <div className="container mx-auto mt-8 px-4 ">
-        <p className="text-center text-sm">&copy; 2024 3Z Bio All Rights Reserved.</p>
       </div>
     </footer>
   );
