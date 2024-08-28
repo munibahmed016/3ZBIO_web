@@ -1,0 +1,53 @@
+.health-monitor {
+    padding: 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .health-monitor h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .health-monitor p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .chronic-disease-series {
+    margin-top: 40px;
+  }
+  
+  .products, .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 200px;
+    background-color: #fff;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .product-card p {
+    font-size: 1em;
+    margin: 10px 0;
+  }
+  
+  .btn-outline-primary {
+    border: 1px solid #007bff;
+    color: #007bff;
+    margin-top: 10px;
+  }
+  

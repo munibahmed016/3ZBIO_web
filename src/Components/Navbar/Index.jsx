@@ -29,8 +29,7 @@ const Navbar = () => {
 
   return (
     <header className="bg-gradient-to-r from-[#022636] to-[#349E64] text-white">
-      <div className="container mx-auto flex justify-between items-center py-2 px-4">
-        {/* Contact Information */}
+    <div className="container mx-auto flex justify-between items-center py-2 px-4 w-full max-w-full">        {/* Contact Information */}
         <div className="flex items-center space-x-2">
           <a href="tel:+9221111326111" className="flex items-center space-x-1 hover:text-teal-400">
             <FaPhoneAlt />
@@ -41,7 +40,6 @@ const Navbar = () => {
             <span>contact@3zbio.pk</span>
           </a>
         </div>
-        {/* Social Media Icons */}
         <div className="flex items-center space-x-3">
           <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400">
             <FaFacebookF />
@@ -98,7 +96,7 @@ const Navbar = () => {
           </div>
         </div>
         {isOpen && (
-          <div className="md:hidden bg-gray-800 px-4 py-2">
+          <div className="md:hidden bg-gray-800 px-4 py-2 w-full">
             <a href="/" className="block py-2 hover:text-teal-400">Home</a>
             <a href="/categories" className="block py-2 hover:text-teal-400">Categories</a>
             <a href="/brands" className="block py-2 hover:text-teal-400">Brands</a>
