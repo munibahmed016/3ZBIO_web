@@ -7,6 +7,8 @@ import Fertility from "../../assets/Testing-kits_03.png";
 import Infactious from "../../assets/Testing-kits_03-02.png";
 import Allergen from "../../assets/Testing-kits_03-03.png";
 import DrugAbuse from "../../assets/Testing-kits_03-04.png";
+import { LuShoppingBasket } from "react-icons/lu";
+
 
 const TestingKits = () => {
   return (
@@ -19,7 +21,8 @@ const TestingKits = () => {
           <div className="max-w-xs text-center">
             <img src={Fertility} alt="Fertility Tests" className="w-full h-80 object-cover mb-4" />
             <h4 className="font-semibold mb-2">Fertility Tests</h4>
-            <button className="bg-white border-2 border-teal-500 text-teal-500 font-semibold py-2 px-4 rounded-full hover:bg-teal-500 hover:text-white transition-colors duration-300 w-full mt-2">Shop now</button>
+            <button  type='submit' className="bg-white border-2 border-teal-500 text-teal-500 font-semibold py-2 px-4 rounded-full hover:bg-teal-500 hover:text-white transition-colors duration-300 w-full mt-2"
+            >Shop now</button>
           </div>
 
           {/* Infectious Disease Tests */}
