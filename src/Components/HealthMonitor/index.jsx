@@ -2,6 +2,11 @@ import React from "react";
 import BPChecker from "../../assets/multiflex_6in1.png";
 import Acuteck from "../../assets/multigx_6in1-2.png";
 import Red from "../../assets/ghe-2in1.jpg";
+import Orange from "../../assets/guc-3in1.jpg";  // Make sure this path is correct
+import Blue from "../../assets/gke-2in1.jpg";
+import Grey from "../../assets/gue-2in1.jpg";
+import White from "../../assets/meters-2.png";
+import Cholesterol from "../../assets/meters-1.png";
 
 const HealthMonitor = () => {
   return (
@@ -18,24 +23,27 @@ const HealthMonitor = () => {
         <h3 className="text-2xl font-bold mb-6">Chronic Disease Series</h3>
         <div className="flex flex-wrap justify-center gap-8">
           {/* Product Cards */}
-          {[{
-            image: Acuteck,
-            alt: "Multi 6 in 1 Multi-Monitoring System"
-          }, {
-            image: BPChecker,
-            alt: "MultiFlex 6 in 1 with BP & Pulse Test"
-          }].map((product, index) => (
+          {[
+            {
+              image: Acuteck,
+              alt: "Multi 6 in 1 Multi-Monitoring System"
+            },
+            {
+              image: BPChecker,
+              alt: "MultiFlex 6 in 1 with BP & Pulse Test"
+            }
+          ].map((product, index) => (
             <div
               key={index}
-              className="group w-full md:w-1/3 lg:w-1/4 transform hover:-translate-y-2 transition-transform duration-300"
+              className="group w-full md:w-1/2 lg:w-1/3 transform hover:-translate-y-2 transition-transform duration-300"
             >
               <div className="overflow-hidden rounded-lg shadow-lg">
                 <img
                   src={product.image}
                   alt={product.alt}
-                  className="w-full h-64 object-cover"
+                  className="w-auto h-auto object-contain"
                 />
-                <button className="bg-white border-2 border-teal-500 text-teal-500 font-semibold py-2 px-4 rounded-full hover:bg-teal-500 hover:text-white transition-colors duration-300 w-full mt-4">Shop now</button>
+                <button className="bg-white border-2 border-teal-500 text-teal-500 font-semibold py-2 px-4 rounded-full hover:bg-teal-500 hover:text-white transition-colors duration-300 w-28 mt-4">Shop now</button>
               </div>
             </div>
           ))}
@@ -45,21 +53,48 @@ const HealthMonitor = () => {
       {/* Product Grid Section */}
       <div className="text-center mt-12">
         <div className="flex flex-wrap justify-center gap-8">
-          {/* Product Grid */}
-          {[{
-            image: Red,
-            alt: "3 in 1 - Blood Glucose, Uric Acid, and Total Cholesterol Monitor",
-            description: "3 in 1 - Blood Glucose, Uric Acid, and Total Cholesterol Monitor"
-          }].map((product, index) => (
+          {/* Additional Products */}
+          {[
+            {
+              image: Red,
+              alt: "3 in 1 - Blood Glucose, Uric Acid, and Total Cholesterol Monitor",
+              description: "3 in 1 - Blood Glucose, Uric Acid, and Total Cholesterol Monitor"
+            },
+            {
+              image: Orange,
+              alt: "2 in 1 - Blood Glucose and Hemoglobin Monitor",
+              description: "2 in 1 - Blood Glucose and Hemoglobin Monitor"
+            },
+            {
+              image: Blue,
+              alt: "2 in 1 - Blood Glucose and β-Ketone Monitor",
+              description: "2 in 1 - Blood Glucose and β-Ketone Monitor"
+            },
+            {
+              image: Grey,
+              alt: "2 in 1 - Blood Glucose and Uric Acid Monitor",
+              description: "2 in 1 - Blood Glucose and Uric Acid Monitor"
+            },
+            {
+              image: White,
+              alt: "Portable Glycosylated Hemoglobin Analyzer HbA1C Monitor",
+              description: "Portable Glycosylated Hemoglobin Analyzer HbA1C Monitor"
+            },
+            {
+              image: Cholesterol,
+              alt: "Cholesterol Monitoring System",
+              description: "Cholesterol Monitoring System"
+            }
+          ].map((product, index) => (
             <div
               key={index}
-              className="group w-full md:w-1/3 lg:w-1/4 transform hover:-translate-y-2 transition-transform duration-300"
+              className="group w-full md:w-1/2 lg:w-1/3 transform hover:-translate-y-2 transition-transform duration-300"
             >
               <div className="overflow-hidden rounded-lg shadow-lg">
                 <img
                   src={product.image}
                   alt={product.alt}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-72 object-contain"
                 />
                 <p className="mt-4 font-semibold">{product.description}</p>
                 <button className="bg-white border-2 border-teal-500 text-teal-500 font-semibold py-2 px-4 rounded-full hover:bg-teal-500 hover:text-white transition-colors duration-300 w-full mt-2">Shop now</button>

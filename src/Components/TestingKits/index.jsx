@@ -19,7 +19,7 @@ const TestingKits = () => {
           <div className="max-w-xs p-4 bg-white rounded-lg shadow-lg text-center">
             <img src={Fertility} alt="Fertility Tests" className="w-full h-48 object-cover mb-4" />
             <h4 className="font-semibold mb-2">Fertility Tests</h4>
-            <button className="bg-white border-2 border-teal-500 text-teal-500 font-semibold py-2 px-4 rounded-full hover:bg-teal-500 hover:text-white transition-colors duration-300 w-full mt-2">Shop now</button>
+            <button  className="bg-white border-2 border-teal-500 text-teal-500 font-semibold py-2 px-4 rounded-full hover:bg-teal-500 hover:text-white transition-colors duration-300 w-full mt-2">Shop now</button>
           </div>
 
           {/* Infectious Disease Tests */}
