@@ -5,7 +5,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-8">
+    <footer className="bg-gray-900 text-white py-10 w-full">
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 text-center">
         {/* Help Section */}
         <div>
@@ -17,6 +17,7 @@ const Footer = () => {
             <li><a href="/payment-methods" className="hover:text-teal-400">Payment Methods</a></li>
           </ul>
         </div>
+
         {/* Store Policies Section */}
         <div>
           <h4 className="font-bold text-lg mb-4">STORE POLICIES</h4>
@@ -27,6 +28,7 @@ const Footer = () => {
             <li><a href="/our-policies" className="hover:text-teal-400">Our Policies</a></li>
           </ul>
         </div>
+
         {/* Newsletter Section */}
         <div>
           <h4 className="font-bold text-lg mb-4">NEWSLETTER</h4>
@@ -34,13 +36,14 @@ const Footer = () => {
           <form className="flex flex-col mt-4 space-y-2 items-center">
             <input
               type="email"
-              className="bg-gray-800 text-white p-2 w-80 focus:outline-none text-center"
+              className="bg-gray-800 text-white p-2 w-full max-w-xs focus:outline-none text-center"
               placeholder="Enter your email..."
             />
             <button type="submit" className="bg-teal-600 text-white py-1 w-40 px-4 text-sm hover:bg-teal-500">
               SUBSCRIBE
             </button>
           </form>
+          
           {/* Social Media Icons */}
           <div className="flex justify-center space-x-4 mt-4">
             <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">
@@ -59,7 +62,7 @@ const Footer = () => {
       {/* Payment Methods and Copyright Section */}
       <div className="container mx-auto mt-8 px-4 flex flex-col md:flex-row justify-between items-center border-t border-gray-800 pt-4">
         {/* Copyright Section */}
-        <p className="text-center text-sm mb-4 md:mb-0">&copy; 2024 3Z Bio All Rights Reserved.</p>
+        <p className="text-center text-sm mb-4 md:mb-0">&copy; 2024 3Z Bio. All Rights Reserved.</p>
 
         {/* Payment Methods Section */}
         <div className="flex justify-center space-x-4">

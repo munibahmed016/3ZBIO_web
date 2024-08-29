@@ -1,25 +1,18 @@
-import FeaturedProducts from "./Components/FeaturedProducts";
-import Footer from "./Components/Footer";
-import { SimpleSlider } from "./Components/Header/Carousel";
-import HealthMonitor from "./Components/HealthMonitor";
-import Navbar from "./Components/Navbar/Index";
-import PhoneNumber from "./Components/phone";
-import Testimonials from "./Components/Testimonials";
-import TestingKits from "./Components/TestingKits";
-
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './Components/Navbar/Index';
+import Home from './Components/Home';
+import Categories from './Components/Categories';
 
 function App() {
   return (
-    <>
-      <Navbar/>
-      <SimpleSlider/>
-      <FeaturedProducts/>
-      <HealthMonitor/>
-      <TestingKits/>
-      <Testimonials/>
-      <PhoneNumber/>
-      <Footer/>
-    </>
+    <Router>
+    <Navbar />
+      <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/Categories/*" element={<Categories />} />
+      </Routes>
+    </Router>
   );
 }
 

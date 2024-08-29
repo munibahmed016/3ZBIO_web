@@ -43,7 +43,7 @@ export function SimpleSlider() {
   };
 
   return (
-    <div className="slider-container overflow-hidden">
+    <div className="slider-container relative z-[-1] overflow-hidden">
       <Slider {...settings}>
         <div>
           <img src={Progestrol} alt="Slide 1" className="slider-image" />
