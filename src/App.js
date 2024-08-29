@@ -6,6 +6,7 @@ import Categories from './Components/Categories';
 import Brands from './Components/Brands';
 import AboutUs from './Components/AboutUs';
 import ContactUs from './Components/ContactUs/Index';
+import News from './Components/News';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path="/Categories/*" element={<Categories />} />
       <Route path="/Brands/*" element={<Brands/>}/>
       <Route path="/AboutUs/*" element={<AboutUs/>}/>
+      <Route path="/News" element={<News/>}/>
       <Route path="/Contact" element={<ContactUs/>}/>
       </Routes>
     </Router>
