@@ -1,4 +1,13 @@
-import React from 'react'
+import React from 'react';
+import BPChecker from "../../assets/multiflex_6in1.png";
+import Acuteck from "../../assets/multigx_6in1-2.png";
+import Red from "../../assets/ghe-2in1.jpg";
+import Orange from "../../assets/guc-3in1.jpg";
+import Blue from "../../assets/gke-2in1.jpg";
+import Grey from "../../assets/gue-2in1.jpg";
+import White from "../../assets/meters-2.png";
+import Cholesterol from "../../assets/meters-1.png";
+import Footer from '../Footer';
 
 const MedicalDevice = () => {
   return (
@@ -28,7 +37,7 @@ const MedicalDevice = () => {
           ].map((product, index) => (
             <div
               key={index}
-              className="group w-full sm:w-1/2 lg:w-1/3 transform hover:-translate-y-2 transition-transform duration-300"
+              className="group w-full sm:w-1/2 lg:w-1/2 transform hover:-translate-y-2 transition-transform duration-300"
             >
               <div className="overflow-hidden rounded-lg shadow-">
                 <img
@@ -81,7 +90,7 @@ const MedicalDevice = () => {
           ].map((product, index) => (
             <div
               key={index}
-              className="group w-full sm:w-1/2 lg:w-[14.66%] transform hover:-translate-y-2 transition-transform duration-300"
+              className="group w-full sm:w-1/2 lg:w-1/4 transform hover:-translate-y-2 transition-transform duration-300"
             >
               <div className="overflow-hidden rounded-lg shadow-lg">
                 <img

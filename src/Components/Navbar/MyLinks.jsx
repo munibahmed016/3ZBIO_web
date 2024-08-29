@@ -12,7 +12,7 @@ export const links = [
             { name: "Healthcare", link: "/Categories/HealthCare" },
             { name: "Joint Injections", link: "/Categories/JointInjection" },
             { name: "Medical Devices", link: "/Categories/MedicalDevice" },
-            { name: "Institutional Devices", link: "/Categories/InstitutionalDevices" },
+            { name: "Institutional Devices", link: "/Categories/InstitutionalDevice" },
           ],
         },
       ],
