@@ -11,6 +11,7 @@ import InstitutionalDevice from './InstitutionalDevice';
 const Categories = () => {
   return (
     <>
+    
       <Routes>
         <Route path="FoodSupplements" element={<FoodSupplements />} />
         <Route path="TestingKits" element={<TestingKits />} />

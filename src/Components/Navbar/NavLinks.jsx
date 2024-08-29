@@ -37,12 +37,9 @@ const NavLinks = () => {
                       className="w-4 h-4 left-3 absolute mt-1 bg-white rotate-45"
                     ></div>
                   </div>
-                  <div className="bg-white p-5 grid grid-cols-3 gap-10">
+                  <div className="bg-white p-5 grid grid-cols-1 gap-10">
                     {link.sublinks.map((mysublinks, subIndex) => (
                       <div key={subIndex}>
-                        <h1 className="text-lg font-semibold">
-                          {mysublinks.Head}
-                        </h1>
                         {mysublinks.sublink.map((slink, slinkIndex) => (
                           <li className="text-sm text-gray-600 my-2.5" key={slinkIndex}>
                             <Link to={slink.link} className="hover:text-primary">
@@ -67,7 +64,7 @@ const NavLinks = () => {
                     onClick={() =>
                       setSubHeading(subHeading !== slinks.Head ? slinks.Head : "")
                     }
-                    className="py-4 pl-7 font-semibold md:pr-0 pr-5 flex justify-between items-center"
+                    className=" font-semibold md:pr-0 pr-5 flex justify-between items-center"
                   >
                     {slinks.Head}
                     <span className="text-xl md:mt-1 md:ml-2 inline">
@@ -78,7 +75,7 @@ const NavLinks = () => {
                   </h1>
                   <div className={`${subHeading === slinks.Head ? "md:hidden" : "hidden"}`}>
                     {slinks.sublink.map((slink, slinkIndex) => (
-                      <li className="py-3 pl-14" key={slinkIndex}>
+                      <li className="py-3 pl-10" key={slinkIndex}>
                         <Link to={slink.link}>{slink.name}</Link>
                       </li>
                     ))}

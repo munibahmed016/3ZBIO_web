@@ -62,14 +62,9 @@ const Navbar = () => {
           </div>
           <ul className="hidden md:flex items-center space-x-6">
             <li><Link to="/" className="hover:text-teal-400">Home</Link></li>
-            <li>
-              <Link to="/Categories" className="hover:text-teal-400">
-                <NavLinks/>
-              </Link>
-            </li>
-            <li><Link to="/brands" className="hover:text-teal-400">Brands</Link></li>
+            <NavLinks />
             <li><Link to="/news" className="hover:text-teal-400">News</Link></li>
-            <li><Link to="/about" className="hover:text-teal-400">About Us</Link></li>
+            
             <li><Link to="/contact" className="hover:text-teal-400">Contact</Link></li>
             <li className="relative">
               <button onClick={toggleSearch} className="hover:text-teal-400">
@@ -103,11 +98,26 @@ const Navbar = () => {
         {isOpen && (
           <ul className="md:hidden bg-gray-800 px-4 py-2">
             <li><Link to="/" className="block py-2 hover:text-teal-400">Home</Link></li>
-            <li><Link to="/Categories" className="block py-2 hover:text-teal-400"><NavLinks/></Link></li>
-            <li><Link to="/brands" className="block py-2 hover:text-teal-400">Brands</Link></li>
+            <NavLinks />
             <li><Link to="/news" className="block py-2 hover:text-teal-400">News</Link></li>
             <li><Link to="/about" className="block py-2 hover:text-teal-400">About Us</Link></li>
             <li><Link to="/contact" className="block py-2 hover:text-teal-400">Contact</Link></li>
+            <li className="relative">
+              <button onClick={toggleSearch} className="block py-2 hover:text-teal-400">
+                <FaSearch />
+              </button>
+              {isSearchOpen && (
+                <form onSubmit={handleSearchSubmit} className="mt-2">
+                  <input
+                    type="text"
+                    value={searchQuery}
+                    onChange={handleSearchChange}
+                    className="bg-gray-800 text-white px-2 py-1 rounded-lg w-full focus:outline-none"
+                    placeholder="Search..."
+                  />
+                </form>
+              )}
+            </li>
             <li>
               <Link to="/cart" className="block py-2 hover:text-teal-400 flex items-center">
                 <FaShoppingCart />

@@ -17,30 +17,30 @@ export const links = [
         },
       ],
     },
-    // {
-    //   name: "Brands",
-    //   submenu: true,
-    //   sublinks: [
-    //     {
-    //       Head: "Brands",
-    //       sublink: [
-    //         { name: "Acuteck", link: "/brands/acuteck" },
-    //         { name: "Ecotest", link: "/brands/ecotest" },
-    //       ],
-    //     },
-    //   ],
-    // },
-    // {
-    //   name: "About Us",
-    //   submenu: false,
-    //   sublinks: [
-    //     {
-    //       Head: "About Us",
-    //       sublink: [
-    //         { name: "Our Team", link: "/about-us/our-team" },
-    //       ],
-    //     },
-    //   ],
-    // },
+    {
+      name: "Brands",
+      submenu: true,
+      sublinks: [
+        {
+          Head: "Brands",
+          sublink: [
+            { name: "Acuteck", link: "/brands/acuteck" },
+            { name: "Ecotest", link: "/brands/ecotest" },
+          ],
+        },
+      ],
+    },
+    {
+      name: "About Us",
+      submenu: true,
+      sublinks: [
+        {
+          Head: "About Us",
+          sublink: [
+            { name: "Our Team", link: "/AboutUs/OurTeam" },
+          ],
+        },
+      ],
+    },
   ];
   
