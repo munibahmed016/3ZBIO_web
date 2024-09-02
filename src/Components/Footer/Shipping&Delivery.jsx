@@ -4,85 +4,73 @@ import Footer from '.'
 const ShippingDelivery = () => {
   return (
     <>
-    <div className="container mx-auto px-4 sm:px-24 py-8 text-gray-800">
-      <h1 className="text-2xl md:text-3xl font-bold mb-6 text-center">Delivery Information</h1>
-      <p className="mb-6 text-center">
-        At 3Z Bio, we understand how important it is for you to stay informed about your order status. Whether you're
-        anxiously awaiting a special purchase or simply want to know when your package will arrive, we provide several
-        ways to track your order and stay updated throughout the delivery process.
+    <div className="container mx-auto px-4 sm:px-24 py-8 text-black">
+      <h1 className="text-2xl md:text-4xl font-bold mb-6 text-center">Delivery Information</h1>
+      <p className="mb-4 text-center text-gray-500 font-medium">
+        Welcome to 3zbio! At 3zbio, we are committed to ensuring that your products reach you most efficiently and timely.
+        <br /> Please review our delivery information below to understand our policies and processes..
       </p>
 
       <div className="space-y-6">
         {/* Section 1 */}
         <section>
-          <h2 className="text-xl md:text-2xl font-semibold mb-4">How to Check Your Order Status</h2>
-          <ul className="list-decimal pl-5 space-y-4">
+          <h2 className="text-xl md:text-2xl font-bold mb-4">Delivery Time frames</h2>
+          <ul className="list-decimal pl-5 space-y-4 font-medium text-gray-500">
             <li>
-              <strong>Order Confirmation Email:</strong> Once you place an order with us, you'll receive an order
-              confirmation email containing your order details and a unique order number. This is the best way to get
-              started by locating your order details. Here are the steps to check your order status:
+              <strong className='text-gray-600'>Standard Shipping:</strong>Orders are typically processed within 1-2 business days and shipped within 5-7 business days.
             </li>
             <li>
-              <strong>Visit Our Website:</strong> You can check the status of your order by simply visiting the order
-              status page on our website. Enter your order number and email to see the latest updates on your order.
-            </li>
-            <li>
-              <strong>Track Your Shipment:</strong> Once your order is shipped, you'll receive a shipping confirmation
-              email containing a tracking number and a link to the courier's website. Use this link to track your order
-              and see the estimated delivery date.
-            </li>
-            <li>
-              <strong>Contact Customer Service:</strong> If you have any questions or need help with your order status,
-              please do not hesitate to contact our customer service department. Our team is always ready to assist you
-              and guide you with the latest information about your order.
+              <strong className='text-gray-600'>Express Shipping:</strong> Orders are processed within 1 business day and shipped within 2-3 business days.
             </li>
           </ul>
         </section>
-
         {/* Section 2 */}
         <section>
-          <h2 className="text-xl md:text-2xl font-semibold mb-4">Understanding Order Status Updates</h2>
-          <p className="mb-4">
-            As your order moves through the fulfillment process, its status will be updated to reflect its current
-            stage. Here are some common order status updates you might see:
-          </p>
-          <ul className="list-disc pl-5 space-y-2">
-            <li>Order Placed: Your order has been successfully placed and is being processed.</li>
-            <li>Order Confirmed: Your order has been confirmed and is being prepared.</li>
-            <li>Shipped: Your order has been shipped and is on its way to you.</li>
-            <li>Out for Delivery: Your order is out for delivery and will arrive soon.</li>
-            <li>Delivered: Your order has been delivered to your specified address.</li>
-            <li>Delayed: Your order has been delayed. Please contact customer service for more information.</li>
+          <h2 className="text-xl md:text-2xl font-bold mb-4">Shipping Costs</h2>
+          <ul className="list-disc pl-5 space-y-2 font-medium text-gray-500">
+            <li> <strong className='text-gray-600'>Standard Shipping: </strong>Free for all orders over $50. A flat rate of $5 applies for orders below $50.</li>
+            <li> <strong className='text-gray-600'>Express Shipping:</strong> A flat rate of $15 applies for all orders.</li>
           </ul>
         </section>
 
         {/* Section 3 */}
         <section>
-          <h2 className="text-xl md:text-2xl font-semibold mb-4">Delayed Orders</h2>
-          <p className="mb-4">
-            While we strive to meet our delivery estimates, there are times when unexpected delays can occur. We do our
-            best to keep you informed about any delays and provide an updated estimated delivery date. If your order is
-            delayed, we will notify you via email.
+          <h2 className="text-xl md:text-2xl font-bold mb-4">International Shipping</h2>
+          <p className="mb-4 text-gray-500 font-medium">
+          We offer international shipping to select countries. Delivery times and shipping costs will vary based on the destination. Customers are responsible for any customs duties or taxes applicable in their country.
           </p>
         </section>
 
         {/* Section 4 */}
         <section>
-          <h2 className="text-xl md:text-2xl font-semibold mb-4">Order Status Notifications</h2>
-          <p className="mb-4">
-            We offer various notifications to keep you informed at every stage of the order fulfillment process. These
-            notifications include order confirmation, shipping updates, and delivery confirmations. You can also sign
-            up for text notifications to receive updates directly on your mobile device.
+          <h2 className="text-xl md:text-2xl font-bold mb-4">Order Tracking</h2>
+          <p className="mb-4 text-gray-500 font-medium">
+          Once your order is shipped, you will receive an email with your tracking information. You can track your order status on our website or via the carrier’s Website.
           </p>
         </section>
 
         {/* Section 5 */}
         <section>
-          <h2 className="text-xl md:text-2xl font-semibold mb-4">Account Orders</h2>
-          <p className="mb-4">
-            If you have an account with us, you can always check your order status by logging into your account on our
-            website. Your order history, including current and past orders, will be available under the 'My Orders'
-            section. This is the easiest way to stay informed about your purchases and track your orders.
+          <h2 className="text-xl md:text-2xl font-bold mb-4">Missing or Delayed Orders</h2>
+          <p className="mb-4 text-gray-500 font-medium">
+  If your order is delayed or you haven’t received your tracking information, please contact our customer service team at{" "}
+  <a href="mailto:support@3zbio.com" className="text-blue-500 no-underline">
+    support@3zbio.com
+  </a>
+  . We will investigate and provide you with the latest information on your order status.
+</p>
+
+        </section>
+        {/* Section 6 */}
+        <section>
+          <h2 className="text-xl md:text-2xl font-bold mb-4">Delivery Address</h2>
+          <p className="mb-4 text-gray-500 font-medium">
+          Please ensure that your delivery address is accurate and complete. 3zbio is not responsible for orders delivered to incorrect or incomplete addresses provided by the customer.
+          <br />
+          <br />
+          For further assistance, contact our customer service team at{" "} <a href="mailto:support@3zbio.com" className="text-blue-500 no-underline">
+          support@3zbio.com
+        </a>.
           </p>
         </section>
       </div>
