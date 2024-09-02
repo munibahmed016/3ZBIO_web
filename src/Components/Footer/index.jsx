@@ -15,7 +15,7 @@ const Footer = () => {
             <li><Link to="/OrderStatus" className="hover:text-teal-400">Order Status</Link></li>
             <li><Link to="/Shipping&Delivery" className="hover:text-teal-400">Shipping & Delivery</Link></li>
             <li><Link to="/Return&Refund" className="hover:text-teal-400">Return Policy</Link></li>
-            <li><Link to="/payment-methods" className="hover:text-teal-400">Payment Methods</Link></li>
+            <li><Link to="/PaymentMethod" className="hover:text-teal-400">Payment Methods</Link></li>
           </ul>
         </div>
 
