@@ -9,6 +9,7 @@ import ContactUs from './Components/ContactUs/Index';
 import News from './Components/News';
 import OrderStatus from './Components/Footer/OrderStatus';
 import ShippingDelivery from './Components/Footer/Shipping&Delivery';
+import ReturnRefund from './Components/Footer/Return&Refund';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Route path="/Contact" element={<ContactUs/>}/>
       <Route path='/OrderStatus' element={<OrderStatus/>}/>
       <Route path='/Shipping&Delivery' element={<ShippingDelivery/>}/>
+      <Route path='/Return&Refund' element={<ReturnRefund/>}/>
       </Routes>
     </Router>
   );
