@@ -16,76 +16,64 @@ const Careers = () => {
           <ul className=" pl-5 space-y-4 text-lg text-gray-500 font-medium">
             <li>
             <p className="mb-6 text-start text-lg text-gray-500 font-medium"> <strong className='text-gray-600 text-xl'>Innovation:</strong>
-              Orders are typically processed within 1-2 business days and shipped within 5-7 business days.</p>
+            Be part of a company at the forefront of medical diagnostics technology.</p>
             </li>
             <li>
             <p className="mb-6 text-start text-lg text-gray-500 font-medium"><strong className='text-gray-600 text-xl'>Growth:</strong>
-              Orders are processed within 1 business day and shipped within 2-3 business days.</p>
+            We offer opportunities for professional development and career advancement.</p>
             </li>
             <li>
             <p className="mb-6 text-start text-lg text-gray-500 font-medium"> <strong className='text-gray-600 text-xl'>Culture:</strong>
-              Orders are typically processed within 1-2 business days and shipped within 5-7 business days.</p>
+            Join a collaborative and supportive team that values diversity and inclusion.</p>
             </li>
             <li>
             <p className="mb-6 text-start text-lg text-gray-500 font-medium"><strong className='text-gray-600 text-xl'>Impact:</strong>
-              Orders are processed within 1 business day and shipped within 2-3 business days.</p>
+            Contribute to products that make a difference in people’s lives.</p>
             </li>
           </ul>
         </section>
 
         {/* Section 2 */}
         <section>
-          <h2 className="text-xl md:text-3xl text-black font-bold mb-4">Shipping Costs</h2>
+          <h2 className="text-xl md:text-3xl text-black font-bold mb-4">Current Openings</h2>
           <ul className=" pl-5 space-y-4 text-lg text-gray-500 font-medium">
             <li>
-            <p className="mb-6 text-start text-lg text-gray-500 font-medium"> <strong className='text-gray-600 text-xl'>Standard Shipping:</strong>
-              Free for all orders over $50. A flat rate of $5 applies for orders below $50.</p>
+            <p className="mb-6 text-start text-lg text-gray-500 font-medium"> <strong className='text-gray-600 text-xl'>Sales and Marketing Manager:</strong>
+            Develop and implement marketing strategies to drive sales growth.</p>
             </li>
             <li>
-            <p className="mb-6 text-start text-lg text-gray-500 font-medium"> <strong className='text-gray-600 text-xl'>Express Shipping:</strong>
-             A flat rate of $15 applies for all orders.</p>
+            <p className="mb-6 text-start text-lg text-gray-500 font-medium"> <strong className='text-gray-600 text-xl'>Product Development Engineer:</strong>
+            Design and develop new medical diagnostic products.</p>
+            </li>
+            <li>
+            <p className="mb-6 text-start text-lg text-gray-500 font-medium"> <strong className='text-gray-600 text-xl'>Customer Support Specialist:</strong>
+            Provide exceptional support to our customers and resolve inquiries.</p>
             </li>
           </ul>
         </section>
 
         {/* Section 3 */}
         <section>
-          <h2 className="text-xl md:text-2xl font-bold text-black mb-4">International Shipping</h2>
+          <h2 className="text-xl md:text-2xl font-bold text-black mb-4">How to Apply</h2>
           <p className="mb-4 text-lg font-medium text-gray-500">
-          We offer international shipping to select countries. Delivery times and shipping costs will vary based on the destination. Customers are responsible for any customs duties or taxes applicable in their country.
+          If you are interested in any of our open positions, please send your resume and cover letter to{" "}
+          <a href="mailto:careers@3zbio.com" className="text-blue-500 no-underline">
+          careers@3zbio.com
+        </a>{" "}.
+        Be sure to include the position you are applying for in the subject line.
           </p>
         </section>
 
         {/* Section 4 */}
         <section>
-          <h2 className="text-xl md:text-2xl font-bold text-black mb-4">Order Tracking</h2>
+          <h2 className="text-xl md:text-2xl font-bold text-black mb-4">Internship Opportunities</h2>
           <p className="mb-4 text-lg font-medium text-gray-500">
-          Once your order is shipped, you will receive an email with your tracking information. You can track your order status on our website or via the carrier’s Website.
+          We also offer internship programs for students and recent graduates. Gain hands-on experience and learn from industry experts.
           </p>
-        </section>
-
-        {/* Section 5 */}
-        <section>
-          <h2 className="text-xl md:text-2xl font-bold text-black  mb-4">Missing or Delayed Orders</h2>
-          <p className="mb-4 text-lg font-medium text-gray-500">
-          If your order is delayed or you haven’t received your tracking information, please contact our customer service team at{" "}
-          <a href="mailto:support@3zbio.com" className="text-blue-500 no-underline">
-          support@3zbio.com
+          <p className="mb-4 text-lg font-medium text-gray-500">For more information on careers at 3zbio, please visit our Careers page or contact our HR department at {" "}
+          <a href="mailto: hr@3zbio.com" className="text-blue-500 no-underline">
+          hr@3zbio.com
         </a>{" "}.
-        We will investigate and provide you with the latest information on your order status.
-          </p>
-        </section>
-        {/* Section 6 */}
-        <section>
-          <h2 className="text-xl md:text-2xl font-bold text-black mb-4">Delivery Address</h2>
-          <p className="mb-4 text-lg font-medium text-gray-500">
-          Please ensure that your delivery address is accurate and complete. 3zbio is not responsible for orders delivered to incorrect or incomplete addresses provided by the customer.
-          <p className="mb-4 text-lg font-medium text-gray-500">
-          For further assistance, contact our customer service team at
-        <a href="mailto:support@3zbio.com" className="text-blue-500 no-underline">
-          support@3zbio.com
-        </a>{" "}.
-          </p>
           </p>
         </section>
       </div>
