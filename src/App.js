@@ -14,6 +14,7 @@ import PaymentMethod from './Components/Footer/PaymentMethod';
 import DeliveryInformation from './Components/Footer/DeliveryInformation';
 import Return from './Components/Footer/Return';
 import Careers from './Components/Footer/Careers';
+import PrivacyPolicy from './Components/Footer/Privacy';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
       <Route path='/DeliveryInformation' element={<DeliveryInformation/>}/>
       <Route path="/Return" element={<Return/>}/>
       <Route path='/Careers' element={<Careers/>}/>
+      <Route path='/Privacy' element={<PrivacyPolicy/>}/>
       </Routes>
     </Router>
   );

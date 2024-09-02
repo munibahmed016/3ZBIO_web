@@ -12,10 +12,10 @@ const Footer = () => {
         <div>
           <h4 className="font-bold text-lg mb-4">HERE TO HELP</h4>
           <ul className="space-y-3">
-            <li><Link to="/OrderStatus" className="hover:text-teal-400">Order Status</Link></li>
-            <li><Link to="/Shipping&Delivery" className="hover:text-teal-400">Shipping & Delivery</Link></li>
-            <li><Link to="/Return&Refund" className="hover:text-teal-400">Return Policy</Link></li>
-            <li><Link to="/PaymentMethod" className="hover:text-teal-400">Payment Methods</Link></li>
+            <li><Link to="/OrderStatus" className="hover:text-teal-400 font-thin">Order Status</Link></li>
+            <li><Link to="/Shipping&Delivery" className="hover:text-teal-400 font-thin">Shipping & Delivery</Link></li>
+            <li><Link to="/Return&Refund" className="hover:text-teal-400 font-thin">Return Policy</Link></li>
+            <li><Link to="/PaymentMethod" className="hover:text-teal-400 font-thin">Payment Methods</Link></li>
           </ul>
         </div>
 
@@ -23,17 +23,17 @@ const Footer = () => {
         <div>
           <h4 className="font-bold text-lg mb-4">STORE POLICIES</h4>
           <ul className="space-y-3">
-            <li><a href="/DeliveryInformation" className="hover:text-teal-400">Delivery Information</a></li>
-            <li><a href="/Return" className="hover:text-teal-400">Refunds & Returns</a></li>
-            <li><a href="/careers" className="hover:text-teal-400">Careers</a></li>
-            <li><a href="/our-policies" className="hover:text-teal-400">Our Policies</a></li>
+            <li><a href="/DeliveryInformation" className="hover:text-teal-400 font-thin">Delivery Information</a></li>
+            <li><a href="/Return" className="hover:text-teal-400 font-thin">Refunds & Returns</a></li>
+            <li><a href="/careers" className="hover:text-teal-400 font-thin">Careers</a></li>
+            <li><a href="/Privacy" className="hover:text-teal-400 font-thin">Our Policies</a></li>
           </ul>
         </div>
 
         {/* Newsletter Section */}
         <div>
           <h4 className="font-bold text-lg mb-4">NEWSLETTER</h4>
-          <p>Sign up and get 15% off your first order</p>
+          <p className='text-sm'>Sign up and get 15% off your first order</p>
           <form className="flex flex-col mt-4 space-y-2 items-start">
             <input
               type="email"
