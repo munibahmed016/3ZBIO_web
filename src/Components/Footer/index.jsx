@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   FaFacebookF, FaInstagram, FaYoutube, FaCcVisa, FaCcMastercard, FaCcPaypal, FaCcAmex, FaCcDiscover
 } from 'react-icons/fa';
@@ -11,10 +12,10 @@ const Footer = () => {
         <div>
           <h4 className="font-bold text-lg mb-4">HERE TO HELP</h4>
           <ul className="space-y-3">
-            <li><a href="/order-status" className="hover:text-teal-400">Order Status</a></li>
-            <li><a href="/shipping" className="hover:text-teal-400">Shipping & Delivery</a></li>
-            <li><a href="/returns" className="hover:text-teal-400">Return Policy</a></li>
-            <li><a href="/payment-methods" className="hover:text-teal-400">Payment Methods</a></li>
+            <li><Link to="/OrderStatus" className="hover:text-teal-400">Order Status</Link></li>
+            <li><Link to="/Shipping&Delivery" className="hover:text-teal-400">Shipping & Delivery</Link></li>
+            <li><Link to="/returns" className="hover:text-teal-400">Return Policy</Link></li>
+            <li><Link to="/payment-methods" className="hover:text-teal-400">Payment Methods</Link></li>
           </ul>
         </div>
 

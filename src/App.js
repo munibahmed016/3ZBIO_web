@@ -7,6 +7,8 @@ import Brands from './Components/Brands';
 import AboutUs from './Components/AboutUs';
 import ContactUs from './Components/ContactUs/Index';
 import News from './Components/News';
+import OrderStatus from './Components/Footer/OrderStatus';
+import ShippingDelivery from './Components/Footer/Shipping&Delivery';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <Route path="/AboutUs/*" element={<AboutUs/>}/>
       <Route path="/News" element={<News/>}/>
       <Route path="/Contact" element={<ContactUs/>}/>
+      <Route path='/OrderStatus' element={<OrderStatus/>}/>
+      <Route path='/Shipping&Delivery' element={<ShippingDelivery/>}/>
       </Routes>
     </Router>
   );
