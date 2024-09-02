@@ -12,6 +12,7 @@ import ShippingDelivery from './Components/Footer/Shipping&Delivery';
 import ReturnRefund from './Components/Footer/Return&Refund';
 import PaymentMethod from './Components/Footer/PaymentMethod';
 import DeliveryInformation from './Components/Footer/DeliveryInformation';
+import Return from './Components/Footer/Return';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Route path='/Return&Refund' element={<ReturnRefund/>}/>
       <Route path='/PaymentMethod' element={<PaymentMethod/>}/>
       <Route path='/DeliveryInformation' element={<DeliveryInformation/>}/>
+      <Route path="/Return" element={<Return/>}/>
       </Routes>
     </Router>
   );
