@@ -15,12 +15,12 @@ const DeliveryInformation = () => {
           <h2 className="text-xl md:text-3xl text-black font-bold mb-4">Delivery Timeframes</h2>
           <ul className=" pl-5 space-y-4 text-lg text-gray-500 font-medium">
             <li>
-              <strong className='text-black text-2xl'>Standard Shipping:</strong>
-              <p className="mb-6 text-start text-lg text-gray-500 font-medium">Orders are typically processed within 1-2 business days and shipped within 5-7 business days.</p>
+            <p className="mb-6 text-start text-lg text-gray-500 font-medium"> <strong className='text-gray-600 text-xl'>Standard Shipping:</strong>
+              Orders are typically processed within 1-2 business days and shipped within 5-7 business days.</p>
             </li>
             <li>
-              <strong className='text-black text-2xl'>Express Shipping:</strong>
-              <p className="mb-6 text-start text-lg text-gray-500 font-medium">Orders are processed within 1 business day and shipped within 2-3 business days.</p>
+            <p className="mb-6 text-start text-lg text-gray-500 font-medium"><strong className='text-gray-600 text-xl'>Express Shipping:</strong>
+              Orders are processed within 1 business day and shipped within 2-3 business days.</p>
             </li>
           </ul>
         </section>
@@ -30,12 +30,12 @@ const DeliveryInformation = () => {
           <h2 className="text-xl md:text-3xl text-black font-bold mb-4">Shipping Costs</h2>
           <ul className=" pl-5 space-y-4 text-lg text-gray-500 font-medium">
             <li>
-              <strong className='text-black text-2xl'>Standard Shipping:</strong>
-              <p className="mb-6 text-start text-lg text-gray-500 font-medium">Free for all orders over $50. A flat rate of $5 applies for orders below $50.</p>
+            <p className="mb-6 text-start text-lg text-gray-500 font-medium"> <strong className='text-gray-600 text-xl'>Standard Shipping:</strong>
+              Free for all orders over $50. A flat rate of $5 applies for orders below $50.</p>
             </li>
             <li>
-              <strong className='text-black text-2xl'>Express Shipping:</strong>
-              <p className="mb-6 text-start text-lg text-gray-500 font-medium">A flat rate of $15 applies for all orders.</p>
+            <p className="mb-6 text-start text-lg text-gray-500 font-medium"> <strong className='text-gray-600 text-xl'>Express Shipping:</strong>
+             A flat rate of $15 applies for all orders.</p>
             </li>
           </ul>
         </section>
