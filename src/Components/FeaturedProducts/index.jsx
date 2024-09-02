@@ -6,7 +6,7 @@ import "./style.css";
 
 const FeaturedProducts = () => {
   return (
-    <section className="text-center py-16">
+    <section className="text-center py-10">
       <h2 className="text-[#C4A968] text-2xl md:text-[50px] font-bold">
         World's 1<sup>st</sup> Peptide-Based Diabetes Product
       </h2>

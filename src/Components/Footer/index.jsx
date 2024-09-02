@@ -7,7 +7,7 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-10 w-full">
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 text-center">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 text-start">
         {/* Help Section */}
         <div>
           <h4 className="font-bold text-lg mb-4">HERE TO HELP</h4>
@@ -34,13 +34,13 @@ const Footer = () => {
         <div>
           <h4 className="font-bold text-lg mb-4">NEWSLETTER</h4>
           <p>Sign up and get 15% off your first order</p>
-          <form className="flex flex-col mt-4 space-y-2 items-center">
+          <form className="flex flex-col mt-4 space-y-2 items-start">
             <input
               type="email"
-              className="bg-gray-800 text-white p-2 w-full max-w-xs focus:outline-none text-center"
+              className="bg-gray-800 text-white p-2 w-full max-w-xs focus:outline-none text-start"
               placeholder="Enter your email..."
             />
-            <button type="submit" className="bg-teal-600 text-white py-1 w-40 px-4 text-sm hover:bg-teal-500">
+            <button type="submit" className="bg-teal-600 text-white py-[2.5%] w-40 px-4 text-sm hover:bg-teal-500">
               SUBSCRIBE
             </button>
           </form>

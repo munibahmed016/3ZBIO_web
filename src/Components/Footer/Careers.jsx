@@ -12,14 +12,22 @@ const Careers = () => {
       <div className="space-y-6">
         {/* Section 1 */}
         <section>
-          <h2 className="text-xl md:text-3xl text-black font-bold mb-4">Delivery Timeframes</h2>
+          <h2 className="text-xl md:text-3xl text-black font-bold mb-4">Why Work at 3ZBIO?</h2>
           <ul className=" pl-5 space-y-4 text-lg text-gray-500 font-medium">
             <li>
-            <p className="mb-6 text-start text-lg text-gray-500 font-medium"> <strong className='text-gray-600 text-xl'>Standard Shipping:</strong>
+            <p className="mb-6 text-start text-lg text-gray-500 font-medium"> <strong className='text-gray-600 text-xl'>Innovation:</strong>
               Orders are typically processed within 1-2 business days and shipped within 5-7 business days.</p>
             </li>
             <li>
-            <p className="mb-6 text-start text-lg text-gray-500 font-medium"><strong className='text-gray-600 text-xl'>Express Shipping:</strong>
+            <p className="mb-6 text-start text-lg text-gray-500 font-medium"><strong className='text-gray-600 text-xl'>Growth:</strong>
+              Orders are processed within 1 business day and shipped within 2-3 business days.</p>
+            </li>
+            <li>
+            <p className="mb-6 text-start text-lg text-gray-500 font-medium"> <strong className='text-gray-600 text-xl'>Culture:</strong>
+              Orders are typically processed within 1-2 business days and shipped within 5-7 business days.</p>
+            </li>
+            <li>
+            <p className="mb-6 text-start text-lg text-gray-500 font-medium"><strong className='text-gray-600 text-xl'>Impact:</strong>
               Orders are processed within 1 business day and shipped within 2-3 business days.</p>
             </li>
           </ul>
