@@ -43,7 +43,7 @@ const TestingKits = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: productGridInView ? 1 : 0, y: productGridInView ? 0 : 50 }}
         transition={{ duration: 0.5, delay: 0.3 }}
-        whileHover={{ opacity: 0.7 }}
+        whileHover={{ opacity: 0.6 }}
       />
       
           <h4 className="font-semibold mb-2">Fertility Tests</h4>
@@ -64,7 +64,7 @@ const TestingKits = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: productGridInView ? 1 : 0, y: productGridInView ? 0 : 50 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            whileHover={{ opacity: 0.7 }}
+            whileHover={{ opacity: 0.6 }}
           />
           <h4 className="font-semibold mb-2">Infectious Disease Tests</h4>
           <button className="bg-white border-2 border-teal-500 text-teal-500 font-semibold py-2 px-4 rounded-full hover:bg-teal-500 hover:text-white transition-colors duration-300 w-full mt-2">
@@ -81,7 +81,7 @@ const TestingKits = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: productGridInView ? 1 : 0, y: productGridInView ? 0 : 50 }}
             transition={{ duration: 0.5, delay: 0.5 }}
-            whileHover={{ opacity: 0.7 }}
+            whileHover={{ opacity: 0.6 }}
           />
           <h4 className="font-semibold mb-2">Allergen Tests</h4>
           <button className="bg-white border-2 border-teal-500 text-teal-500 font-semibold py-2 px-4 rounded-full hover:bg-teal-500 hover:text-white transition-colors duration-300 w-full mt-2">
@@ -98,7 +98,7 @@ const TestingKits = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: productGridInView ? 1 : 0, y: productGridInView ? 0 : 50 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            whileHover={{ opacity: 0.7 }}
+            whileHover={{ opacity: 0.6 }}
           />
           <h4 className="font-semibold mb-2">Drug of Abuse Tests</h4>
           <button className="bg-white border-2 border-teal-500 text-teal-500 font-semibold py-2 px-4 rounded-full hover:bg-teal-500 hover:text-white transition-colors duration-300 w-full mt-2">
