@@ -5,7 +5,7 @@ import HealthMonitor from './HealthMonitor'
 import TestingKits from './TestingKits'
 import PhoneNumber from './phone'
 import Footer from './Footer'
-import TestimonialComponent from './Testimonials'
+import TestimonialsSection from './Testimonials'
 
 const Home = () => {
   return (
@@ -14,7 +14,7 @@ const Home = () => {
     <FeaturedProducts/>
     <HealthMonitor/>
     <TestingKits/>
-    <TestimonialComponent/>
+    <TestimonialsSection/>
     <PhoneNumber/>
     <Footer/>
     </>

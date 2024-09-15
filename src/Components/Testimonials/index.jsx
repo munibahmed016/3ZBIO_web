@@ -1,109 +1,82 @@
-import React, { useState } from 'react';
-import 'tailwindcss/tailwind.css';
+import React from 'react';
+import 'remixicon/fonts/remixicon.css'; 
+import { motion } from 'framer-motion';  // Import motion from framer-motion
 import Zara from "../../assets/dr-zara.jpg";
 import Shujra from "../../assets/dr_shujra.jpg";
 import Sitwat from "../../assets/dr_sitwat.jpg";
 
-const TestimonialComponent = () => {
-  const [testimonialActive, setTestimonialActive] = useState(2);
+const testimonials = [
+  {
+    quote: 'Love the simplicity',
+    text: ' I am so happy with the product that I purchased from 3Zbio for diabetes, weight loss, and cholesterol. I highly recommend their products and their support team is wonderful!',
+    name: 'Dr Zara Mahmood',
+    title: 'Pharmacist',
+    img: Zara,
+  },
+  {
+    quote: 'Love the simplicity',
+    text: ' I am so happy with the product that I purchased from 3Zbio for diabetes, weight loss, and cholesterol. I highly recommend their products and their support team is wonderful!',
+    name: 'Dr. Noor Muhammad Shujrah',
+    title: 'Clinical Therapeutic Nutritionist, Mendocino College , California U.S.A',
+    img: Shujra, 
+  },
+  {
+    quote: 'Love the simplicity',
+    text: ' I am so happy with the product that I purchased from 3Zbio for diabetes, weight loss, and cholesterol. I highly recommend their products and their support team is wonderful!',
+    name: 'Dr. Sitwat Azeem',
+    title: 'Director & Chief Consultant (Infertility), Noor Hospital, Khi',
+    img: Sitwat, 
+  },
+];
 
+const TestimonialsSection = () => {
   return (
-    <div className="antialiased sans-serif bg-gray-200 text-gray-600">
-      <div className="my-10 md:my-24 container mx-auto flex flex-col md:flex-row shadow-sm overflow-hidden">
-        <div className="relative w-full py-2 md:py-24 bg-indigo-700 md:w-1/2 flex flex-col items-center justify-center">
-          <div className="absolute top-0 left-0 z-10 grid-indigo w-16 h-16 md:w-40 md:h-40 md:ml-20 md:mt-24"></div>
-          
-          <div className="relative text-2xl md:text-5xl py-2 px-6 md:py-6 md:px-1 md:w-64 md:mx-auto text-indigo-100 font-semibold leading-tight tracking-tight mb-0 z-20">
-            <span className="md:block">What Our</span>
-            <span className="md-block">Customers</span>
-            <span className="block">Are Saying!</span>
-          </div>
+    <section className="max-w-screen-xl mx-auto p-6 text-center bg-white">
+      <h2 className="text-teal-600 text-lg font-semibold">Testimonials</h2>
+      <h1 className="relative text-3xl font-bold text-gray-800 mb-8">
+        Recommended By Professionals
+        <span className="absolute w-16 h-1 bg-teal-600 left-1/2 transform -translate-x-1/2 bottom-0"></span>
+      </h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {testimonials.map((testimonial, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}  // Animate from left or right
+            animate={{ opacity: 1, x: 0 }}  // Bring it to the center
+            transition={{ duration: 0.8, ease: "easeInOut", delay: index * 0.3 }}  // Smooth transition
+            className="relative bg-white p-8 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:bg-teal-500 hover:text-white"
+          >
+            {/* Circle and quote icon */}
+            <div className="absolute top-1 left-1 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-[#022636] rounded-full z-0 transition-all duration-1000 ease-in-out hover:w-96"></div>
+            <span className="absolute top-1 left-1 text-5xl text-teal-500 z-10">
+              <i className="ri-double-quotes-l"></i>
+            </span>
 
-          <div className="absolute right-0 bottom-0 mr-4 mb-4 hidden md:block">
-            <button 
-              className="rounded-l-full border-r bg-gray-100 text-gray-500 focus:outline-none hover:text-indigo-500 font-bold w-12 h-10"
-              onClick={() => setTestimonialActive(testimonialActive === 1 ? 3 : testimonialActive - 1)}
-            >
-              &#8592;
-            </button>
-            <button 
-              className="rounded-r-full bg-gray-100 text-gray-500 focus:outline-none hover:text-indigo-500 font-bold w-12 h-10"
-              onClick={() => setTestimonialActive(testimonialActive >= 3 ? 1 : testimonialActive + 1)}
-            >
-              &#8594;
-            </button>
-          </div>
-        </div>
+            {/* Testimonial content */}
+            <h4 className="text-lg font-semibold text-black mt-16 mb-4 z-10 transition-colors duration-300 ease-in-out">
+              {testimonial.quote}
+            </h4>
+            <p className="text-black mb-6 z-10 transition-colors duration-300 ease-in-out">
+              {testimonial.text}
+            </p>
 
-        <div className="bg-gray-100 md:w-1/2">
-          <div className="flex flex-col h-full relative">
-            <div className="absolute top-0 left-0 mt-3 ml-4 md:mt-5 md:ml-12">
-              <svg xmlns="http://www.w3.org/2000/svg" className="text-indigo-200 fill-current w-12 h-12 md:w-16 md:h-16" viewBox="0 0 24 24">
-                <path d="M6.5 10c-.223 0-.437.034-.65.065..."/>
-              </svg>
-            </div>
-
-            <div className="h-full relative z-10">
-              {testimonialActive === 1 && (
-                <p className="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl">
-                I am so happy with the product that I purchased from 3ZBio for diabetes, weight loss, and cholesterol. I highly recommend their products and their support team is wonderful!                </p>
-              )}
-              {testimonialActive === 2 && (
-                <p className="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl">
-                I am so happy with the product that I purchased from 3ZBio for diabetes, weight loss, and cholesterol. I highly recommend their products and their support team is wonderful!                </p>
-              )}
-              {testimonialActive === 3 && (
-                <p className="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl">
-                I am so happy with the product that I purchased from 3ZBio for diabetes, weight loss, and cholesterol. I highly recommend their products and their support team is wonderful!                </p>
-              )}
-            </div>
-
-            <div className="flex my-4 justify-center items-center">
-              <button 
-                onClick={() => setTestimonialActive(1)} 
-                className={`text-center font-bold shadow-xs focus:outline-none focus:shadow-outline inline-block rounded-full mx-2 ${testimonialActive !== 1 ? 'h-12 w-12 opacity-25 bg-indigo-300 text-gray-600' : 'h-16 w-16 opacity-100 bg-indigo-600 text-white'}`}
-              >
-                <img src={Zara} />
-              </button>
-              <button 
-                onClick={() => setTestimonialActive(2)} 
-                className={`text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-16 w-16 inline-block bg-indigo-600 rounded-full mx-2 ${testimonialActive !== 2 ? 'h-12 w-12 opacity-25 bg-indigo-300 text-gray-600' : 'h-16 w-16 opacity-100 bg-indigo-600 text-white'}`}
-              >
-                <img src={Sitwat} />
-              </button>
-              <button 
-                onClick={() => setTestimonialActive(3)} 
-                className={`text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-12 w-12 inline-block bg-indigo-600 rounded-full mx-2 ${testimonialActive !== 3 ? 'h-12 w-12 opacity-25 bg-indigo-300 text-gray-600' : 'h-16 w-16 opacity-100 bg-indigo-600 text-white'}`}
-              >
-                <img src={Shujra} />
-              </button>
-            </div>
-
-            <div className="flex justify-center px-6 pt-2 pb-6 md:py-6">
-              {testimonialActive === 1 && (
-                <div className="text-center">
-                  <h2 className="text-sm md:text-base font-bold text-gray-700 leading-tight">DR. Zara Mahmood</h2>
-                  <small className="text-gray-500 text-xs md:text-sm truncate">Pharmacist</small>
-                </div>
-              )}
-              {testimonialActive === 2 && (
-                <div className="text-center">
-                  <h2 className="text-sm md:text-base font-bold text-gray-700 leading-tight">DR. Sitwat Azeem</h2>
-                  <small className="text-gray-500 text-xs md:text-sm truncate"></small>
-                </div>
-              )}
-              {testimonialActive === 3 && (
-                <div className="text-center">
-                  <h2 className="text-sm md:text-base font-bold text-gray-700 leading-tight">DR. Noor Muhammad Shujrah</h2>
-                  <small className="text-gray-500 text-xs md:text-sm truncate">Product Manager, Fake Corp.</small>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
+            {/* User avatar */}
+            <img
+              className="w-24 h-24 rounded-full border-4 border-teal-600 mx-auto mb-4 transition-all duration-300 ease-in-out z-10"
+              src={testimonial.img}
+              alt={testimonial.name}
+            />
+            <h5 className="text-black font-semibold z-10 transition-colors duration-300 ease-in-out">
+              {testimonial.name}
+            </h5>
+            <h6 className="text-gray-600 z-10 transition-colors duration-300 ease-in-out">
+              {testimonial.title}
+            </h6>
+          </motion.div>
+        ))}
       </div>
-    </div>
+    </section>
   );
 };
 
-export default TestimonialComponent;
+export default TestimonialsSection;
