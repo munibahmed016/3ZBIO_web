@@ -1,6 +1,6 @@
 import React from 'react';
 import 'remixicon/fonts/remixicon.css'; 
-import { motion } from 'framer-motion';  // Import motion from framer-motion
+import { motion } from 'framer-motion';
 import Zara from "../../assets/dr-zara.jpg";
 import Shujra from "../../assets/dr_shujra.jpg";
 import Sitwat from "../../assets/dr_sitwat.jpg";
