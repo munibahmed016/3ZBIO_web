@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Logo from "../../assets/3z_bio.svg"
 
 const ContactUs = () => {
     const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
@@ -17,7 +18,7 @@ const ContactUs = () => {
     return (
         <div className="bg-gray-100 py-12">
             <div className="text-center mb-8">
-                <img src="logo-url" alt="3Z Bio Logo" className="mx-auto mb-4" style={{ width: '100px' }} />
+                <img src={Logo} alt="3Z Bio Logo" className="mx-auto mb-4" style={{ width: '100px' }} />
                 <h2 className="text-3xl font-bold mb-2">Contact US</h2>
                 <p className="text-gray-600">
                     At 3Z Bio, we are dedicated to providing innovative medical solutions to enhance your health and well-being. Reach out to us for any inquiries.
