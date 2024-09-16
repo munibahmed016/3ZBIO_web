@@ -20,8 +20,8 @@ const ContactUs = () => {
             <div className="text-center mb-8">
                 <img src={Logo} alt="3Z Bio Logo" className="mx-auto mb-4" style={{ width: '100px' }} />
                 <h2 className="text-3xl font-bold mb-2">Contact US</h2>
-                <p className="text-gray-600">
-                    At 3Z Bio, we are dedicated to providing innovative medical solutions to enhance your health and well-being. Reach out to us for any inquiries.
+                <p className="text-gray-600 text-lg">
+                    At 3Z Bio, we are dedicated to providing innovative medical solutions to enhance your health and well-being. <br /> Reach out to us for any inquiries.
                 </p>
                 <p className="mt-4 font-medium">Address: 607 Autumn St, Suite B303, Karachi</p>
             </div>
